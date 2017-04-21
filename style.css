@@ -1,86 +1,113 @@
-
-
 * {
-/*    box-sizing: border-box;*/
+    box-sizing: border-box;
 }
 
 .common {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    background: #a89af8;
-    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 50%;
+    margin: 0 auto;
+    background: #fff;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
-    height: 100vh;
-    height: calc(100vh - 16px); /*Калькуляция высоты блока*/
+    height: calc(100vh - 16px);
+    /*Калькуляция высоты блока*/
 }
-
-.box-shadow {
-    width: 250px;
-    height: 250px;
-    background: #5294ff;
-/*    box-shadow: 1px 1px 5px 5px #ccc;*/
-    box-shadow: 0px 13px 18px 0px rgba(0, 0, 0, 0.26); 
-}
-
 
 
 /*-----
------Тени блоков
-----*/
+-----example block with shadow effect
+-----*/
 
-.glith-effect {
-    text-shadow: 1px 2px 0px rgba(255, 0, 246, 1),
-        -1px -1px 0px rgba(0, 252, 255, 1);
+
+/*                        
+.box-shadow {    
+    width: 250px;
+    height: 250px;
+    background: #5294ff;
+    box-shadow: 1px 1px 5px 5px #ccc;
+    box-shadow: 0px 13px 18px 0px rgba(0, 0, 0, 0.26); 
+}
+*/
+
+h1.glith-effect {
+    font-weight: 400;
+    font-size: 58px;
+    font-family: 'Arial', sans-serif;
 }
 
+.glith-effect {
+    text-shadow: 1px 2px 0px rgba(255, 0, 246, 1), -1px -1px 0px rgba(0, 252, 255, 1);
+}
+
+.submit-flex-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-around;
+    width: 100%;
+}
+
+input[type="submit"] {
+    background: rgb(255, 59, 59);
+    font-size: 26px;
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+    outline: none;
+    padding: 10px 50px 10px 60px;
+    border: 1px solid #ad0000;
+    border-radius: 10px;
+    text-shadow: 1px 2px 0px rgba(231, 0, 0, 1);
+    /*Submit text shadow*/
+    box-shadow: 0px 13px 18px 0px rgba(0, 0, 0, 0.26);
+    /* Submit shadow*/
+}
+
+input[type="submit"]:hover {
+    box-shadow: 5px 6px 20.64px 3.36px rgba(0, 0, 0, 0.15) inset;
+    /*Submit hover shadow*/
+    cursor: pointer;
+}
+
+
+/*------------
+------------СТИЛИ ДЛЯ БЛОКОВ
+------------*/
+
 .box-1 {
-    text-shadow: 1px 2px 0px rgba(231, 0, 0, 1); /*Тень текста первого блока*/
-    box-shadow: 0px 13px 18px 0px rgba(0, 0, 0, 0.26); /*Тень первого блока*/
+    text-shadow: 1px 2px 0px rgba(231, 0, 0, 1);
+    /*Тень текста первого блока*/
+    box-shadow: 0px 13px 18px 0px rgba(0, 0, 0, 0.26);
+    /*Тень первого блока*/
 }
 
 .box-2 {
-    box-shadow: 5px 6px 20.64px 3.36px rgba(0, 0, 0, 0.15) inset; /*Тень второго блока при наведении*/
-    text-shadow: 1px 2px 0px rgba(231, 0, 0, 1); /*Тень текста второго блока*/
-}
- 
-.box-3 {
-    
+    box-shadow: 5px 6px 20.64px 3.36px rgba(0, 0, 0, 0.15) inset;
+    /*Тень второго блока при наведении*/
+    text-shadow: 1px 2px 0px rgba(231, 0, 0, 1);
+    /*Тень текста второго блока*/
 }
 
-.box-4 {
-    
-}
+.box-3 {}
+
+.box-4 {}
 
 .box-5 {
-    box-shadow: 0px 22px 24px 0px rgba(255, 0, 0, 0.26),
-        -27px -1px 32px 0px rgba(0, 179, 186, 0.47),
-        26px 7px 32px 0px rgba(255, 150, 0, 0.47); 
+    box-shadow: 0px 22px 24px 0px rgba(255, 0, 0, 0.26), -27px -1px 32px 0px rgba(0, 179, 186, 0.47), 26px 7px 32px 0px rgba(255, 150, 0, 0.47);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.content-block {
+    box-shadow: 5px 6px 0px 0px rgba(0, 0, 0, 0.26);
+}
