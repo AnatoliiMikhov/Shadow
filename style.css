@@ -1,0 +1,20 @@
+
+
+* {
+    box-sizing: border-box;
+}
+
+.common {
+    display: flex;
+    background: #a89af8;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh-16px);
+}
+
+.box-shadow {
+    width: 250px;
+    height: 250px;
+    background: #5294ff;
+    box-shadow: 1px 1px 5px 5px #ccc;
+}
