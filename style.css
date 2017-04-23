@@ -151,7 +151,7 @@ div.rectangle-flexbox {
 
 .list-item-block {
     margin-top: 130px;
-    width: 60%;
+    width: 52%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -199,12 +199,12 @@ ol.num-list-item {
 }
 
 .num-list-item li::before {
-    content: counter(it-num);
+    content: "0"counter(it-num)"";
     position: absolute;
     top: 0;
     left: 0;
     width: 125px;
-    height: 100px;
+    height: 100%;
     text-align: center;
     font-size: 75px;
     font-family: "Georgia";
@@ -240,7 +240,7 @@ ol.num-list-item {
 ------*/
 
 .num-list-item li:nth-child(1)::after,
-.num-list-item li:nth-child(2)::after{
+.num-list-item li:nth-child(2)::after {
     position: absolute;
     top: 40px;
     left: -50px;
@@ -255,7 +255,7 @@ ol.num-list-item {
 
 /*----------------
 ------------------Shablon for COUNTER-INCREMENT--------------------------------------------
--------------------------*/
+--------------------------------------------------------------------------------------------------------------------------------*/
 
 
 /*ol.num-design {
@@ -271,3 +271,8 @@ ol.num-list-item {
 }
 -------------------------------------------------------------------------------------------
 */
+
+
+/*------------------
+-----------------------Style for block with transform effect-----------------------
+-------------------*/
