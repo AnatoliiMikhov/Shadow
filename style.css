@@ -174,16 +174,6 @@ ol.flex-list {
     width: 100%;
 }
 
-li.list-item-decorbox {
-    border: 1px solid #c2c2c2;
-    box-shadow: 5px 6px 0px 0px rgba(0, 0, 0, 0.26);
-    font-size: 17px;
-    color: rgb(53, 53, 53);
-    padding: 20px 0px 20px 150px;
-    line-height: 1.2;
-    margin-bottom: 20px;
-}
-
 ol.num-list-item {
     position: relative;
     list-style: none;
@@ -196,6 +186,13 @@ ol.num-list-item {
 .num-list-item li {
     counter-increment: it-num;
     position: relative;
+    border: 1px solid #c2c2c2;
+    box-shadow: 5px 6px 0px 0px rgba(0, 0, 0, 0.26);
+    font-size: 17px;
+    color: rgb(53, 53, 53);
+    padding: 20px 0px 20px 150px;
+    line-height: 1.2;
+    margin-bottom: 20px;
 }
 
 .num-list-item li::before {
